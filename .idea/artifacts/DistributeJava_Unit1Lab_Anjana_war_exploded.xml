@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="DistributeJava_Unit1Lab_Anjana:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/DistributeJava_Unit1Lab_Anjana_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="DistributeJava_Unit1Lab_Anjana/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="DistributeJava_Unit1Lab_Anjana" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
