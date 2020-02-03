@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="DistributeJava_Unit1Lab_Anjana:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>DistributeJava_Unit1Lab_Anjana</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="myWebApp.war">
+      <element id="artifact" artifact-name="DistributeJava_Unit1Lab_Anjana:war exploded" />
+    </root>
+  </artifact>
+</component>
