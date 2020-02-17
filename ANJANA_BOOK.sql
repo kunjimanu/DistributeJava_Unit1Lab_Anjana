@@ -1,0 +1,4 @@
+INSERT INTO ANJANA.BOOK (BOOK_ID, ISBN, TITLE, CATEGORY) VALUES (2, 11111, 'Alice in wonderland', 'Fantasy');
+INSERT INTO ANJANA.BOOK (BOOK_ID, ISBN, TITLE, CATEGORY) VALUES (3, 22222, 'Percy Jackson The lightning thief', 'Adventure');
+INSERT INTO ANJANA.BOOK (BOOK_ID, ISBN, TITLE, CATEGORY) VALUES (4, 33333, 'Childrens Encyclopedia', 'Encyclopedia');
+INSERT INTO ANJANA.BOOK (BOOK_ID, ISBN, TITLE, CATEGORY) VALUES (101, 44444, 'HarryPotter', 'Fantasy');

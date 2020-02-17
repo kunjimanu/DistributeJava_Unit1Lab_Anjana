@@ -1,15 +1,22 @@
-body {
-    color:lightblue;
-    font-family: "Comic Sans MS";
-
-}
 header{
     padding: 64px;
     background-color: 0F084B;
 }
+
+h2{
+    text-align: center;
+    color:black;
+}
+
 h1 {
     text-align: center;
     color: white;
+}
+
+body {
+    color:black;
+    font-family: "Comic Sans MS";
+
 }
 
 .center{
@@ -29,6 +36,13 @@ h1 {
     padding: 8px;
     width:80%;max-width:420px
 }
+
+.footer{
+    font-size: 8px;
+    color:black;
+    font-family: "Arial";
+}
+
 p{
     color: 070423;
     padding : 4px;
@@ -63,3 +77,4 @@ p{
 .padding-64 {
     padding: 64px;
 }
+

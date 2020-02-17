@@ -12,9 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 </head>
 <body>
-<header>
-    <h1>BOOKWORM</h1>
-</header>
+<jsp:include page='header.jsp'/>
 
 <div class="center ">
     <img class="img-container" src="../resources/img/bookworm-vector-illustration.jpg">
@@ -24,6 +22,9 @@
 <div class="center">
     <a href="#">Browse our collection</a>
 </div>
+
+
+<jsp:include page='footer.jsp'/>
 
 </body>
 </html>

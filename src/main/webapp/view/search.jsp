@@ -11,11 +11,10 @@
     <title>Search pets</title>
 </head>
 <body>
-    <form action="searchpet" method=""get>
+    <form action="searchpet" method="get">
         Search by species <input name="Species" type="text">
         <br>
         <input type="submit">
     </form>
-
 </body>
 </html>

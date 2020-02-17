@@ -14,10 +14,7 @@
 
 
 <body>
-<header>
-    <h1>BOOKWORM</h1>
-    <a class="right whitetext" href="#">Login</a>
-</header>
+<jsp:include page='header.jsp'/>
 <div class="center">
 
     <p>Name:<input type="text" placeholder="Best item ever"></p>
@@ -26,6 +23,7 @@
 
     <a class="btn" href="#">Save</a>
 </div>
+<jsp:include page='footer.jsp'/>
 
 </body>
 </html>

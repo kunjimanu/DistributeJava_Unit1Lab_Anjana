@@ -14,19 +14,14 @@
     <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 
 </head>
-
-
 <body>
-<header>
-    <h1>BOOKWORM</h1>
-</header>
-
-<div class="center">
-    <h2>Login to our store!</h2>
-    <p >Username:<input class="padding-4" type="text" placeholder="Username"></p>
-    <p >Password:<input class="padding-4" type="text" placeholder="Password"></p>
-    <a class="btn" href="#">Login</a>
-</div>
-
+    <jsp:include page='header.jsp'/>
+    <div class="center">
+        <h2>Login to our store!</h2>
+        <p >Username:<input class="padding-4" type="text" placeholder="Username"></p>
+        <p >Password:<input class="padding-4" type="text" placeholder="Password"></p>
+        <a class="btn" href="#">Login</a>
+    </div>
+    <jsp:include page='footer.jsp'/>
 </body>
 </html>

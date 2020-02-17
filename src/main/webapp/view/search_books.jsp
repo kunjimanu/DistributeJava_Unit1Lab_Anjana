@@ -9,12 +9,20 @@
 <html>
 <head>
     <title>Search books</title>
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 </head>
 <body>
-<form action="search" method=""get>
-    Search by bookname <input name="BookName" type="text">
-    <br>
-    <input type="submit">
-</form>
+<jsp:include page='header.jsp'/>
+    <form action="../search2" method="get">
+        <table class="regulartext" align="center">
+            <tr>
+                <td>Search by bookname <input name="BookName" type="text"></td>
+            </tr>
+            <br>
+            <tr></tr>
+            <tr><td><input type="submit"></td></tr>
+        </table>
+    </form>
+<jsp:include page='footer.jsp'/>
 </body>
 </html>
