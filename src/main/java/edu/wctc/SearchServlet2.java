@@ -1,6 +1,7 @@
 package edu.wctc;
 
 import edu.wctc.entity.Book;
+import edu.wctc.entity.BookDetail;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -35,21 +36,30 @@ public class SearchServlet2 extends HttpServlet {
                     "anjana",
                     "anjana");
 
-            String sql = "Select book_id,isbn,title, category from book where title = ?";
+            String sql = "Select book.book_id as book_id,isbn,title, category, author, publisher " +
+                    " from book inner join BOOK_DETAIL on book.BOOK_ID = BOOK_DETAIL.BOOK_ID " +
+                    "where title like ?";
+
             stmt = conn.prepareStatement(sql);
-            stmt.setString(1,bookName);
+            stmt.setString(1, "%" + bookName + "%");
+
             rset =  stmt.executeQuery();
 
             Book currentBook = new Book();
+            BookDetail currentBookDetail = new BookDetail();
             while(rset.next()){
                 currentBook.setBookid(rset.getInt("book_id"));
                 currentBook.setIsbn(rset.getInt("isbn"));
                 currentBook.setTitle(rset.getString("title"));
                 currentBook.setCategory(rset.getString("category"));
+                currentBookDetail.setAuthor(rset.getString("author"));
+                currentBookDetail.setPublisher(rset.getString("publisher"));
             }
 
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/search2.jsp");
             request.setAttribute("currentBook", currentBook);
+            request.setAttribute("currentBookDetail", currentBookDetail);
+
             requestDispatcher.forward(request, response);
 
         } catch (ClassNotFoundException | SQLException e) {

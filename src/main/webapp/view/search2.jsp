@@ -22,6 +22,8 @@
         <tr><td>ISBN: </td><td><c:out value="${requestScope.currentBook.isbn}" /></td></tr>
         <tr><td>Title: </td><td><c:out value="${requestScope.currentBook.title}" /></td></tr>
         <tr><td>Category: </td><td><c:out value="${requestScope.currentBook.category}" /></td></tr>
+        <tr><td>Author: </td><td><c:out value="${requestScope.currentBookDetail.author}" /></td></tr>
+        <tr><td>Publisher: </td><td><c:out value="${requestScope.currentBookDetail.publisher}" /></td></tr>
     </table>
 </div>
 
