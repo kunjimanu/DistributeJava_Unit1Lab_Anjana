@@ -19,14 +19,12 @@
     <h2 align="center" style="color:black;">Book List</h2>
     <table align="center" border="1px black">
 
-    <c:forEach items="${requestScope.ListOfBooks}" var="item">
         <tr class="regulartext">
-            <td><c:out value="${item.bookid}" /></td>
-            <td><c:out value="${item.isbn}" /></td>
-            <td><c:out value="${item.title}" /></td>
-            <td><c:out value="${item.category}" /></td>
+            <td><c:out value="${book.bookid}" /></td>
+            <td><c:out value="${book.isbn}" /></td>
+            <td><c:out value="${book.title}" /></td>
+            <td><c:out value="${book.category}" /></td>
         </tr>
-    </c:forEach>
     </table>
 </div>
 

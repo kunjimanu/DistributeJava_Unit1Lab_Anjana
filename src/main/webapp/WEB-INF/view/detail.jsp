@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Item detail</title>
-    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 </head>
 
 

@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>Search books</title>
-    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 </head>
 <body>
 <jsp:include page='header.jsp'/>
-    <form action="../search2" method="get">
+    <form action="searchresults" method="get">
         <table class="regulartext" align="center">
             <tr>
                 <td>Search by bookname <input name="BookName" type="text"></td>
